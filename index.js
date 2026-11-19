@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express()
-const PORT = 8000
+const PORT = 8000 || process.env.PORT
 
 app.get('/', (req, res) => {
-  res.send('connected successfully')
+  res.send('surver running successfully')
 })
 
 app.listen(PORT, () => {
