@@ -9,7 +9,7 @@ const port = process.env.PORT || 8000;
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 // Connect to MongoDB
-
+//
 async function connectToMongoDB() {
   try {
     await client.connect();
@@ -20,7 +20,7 @@ async function connectToMongoDB() {
     throw err;
   }
 }
-
+//
 async function run() {
   try {
     const client = await connectToMongoDB();
