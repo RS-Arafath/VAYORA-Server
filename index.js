@@ -8,8 +8,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
-// Connect to MongoDB
-//
+// Function to connect to MongoDB
 async function connectToMongoDB() {
   try {
     await client.connect();
