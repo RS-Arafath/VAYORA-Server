@@ -3,7 +3,6 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const express = require('express');
 const { MongoClient } = require('mongodb');
 require('dotenv').config();
-
 const app = express();
 const port = process.env.PORT || 8000;
 const uri = process.env.MONGODB_URI;
